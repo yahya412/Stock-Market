@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.mvc.View?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<View fx:id="generalReport" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="384.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sm.views.GeneralReportPresenter">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="598.0" prefWidth="516.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="transTable" prefHeight="456.0" prefWidth="379.0">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="114.0" text="اسم الشركة" />
+                <TableColumn fx:id="num" prefWidth="44.0" text="عدد الاسهم" />
+                  <TableColumn fx:id="pprice" prefWidth="63.0" text="اجمالي الشراء" />
+                  <TableColumn fx:id="sprice" prefWidth="87.0" text="اجمالي البيع" />
+                  <TableColumn fx:id="total" prefWidth="70.0" text="المجموع" />
+              </columns>
+            </TableView>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#cancel" text="الرئيسيه" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" right="5.0" />
+         </padding>
+      </VBox>
+   </center>
+</View>
